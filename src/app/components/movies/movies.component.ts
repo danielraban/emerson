@@ -43,7 +43,6 @@ export class MoviesComponent implements OnInit {
         this.pageCount = this.movieData.total_pages;
         for (let i = 2; i <= this.pageCount; i++) {
           let newPage = i;
-          let url1 = 'https://jsonmock.hackerrank.com/api/movies/search/?Title=spiderman&page=' + newPage;
           console.log(newPage);
           this.getMovies(newPage);
         }
